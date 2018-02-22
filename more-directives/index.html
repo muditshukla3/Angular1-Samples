@@ -1,0 +1,20 @@
+<html ng-app="moreDirectivesApp">
+
+<head>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div ng-controller="MoreDirectivesController as ctrl">
+        <h1>More Directives </h1>
+        <div ng-repeat="obj in ctrl.myList">
+            <p>S.No :{{$index + 1}}</p>
+            <p>Name :{{obj.name}}</p>
+            <p>Name :{{obj.age}}</p>
+            <hr>
+        </div>
+    </div>
+</body>
+
+</html>

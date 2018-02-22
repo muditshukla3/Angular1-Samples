@@ -1,0 +1,18 @@
+<html ng-app="ngModelExamples">
+
+<head>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Nested Controllers</h1>
+    <div ng-controller="outerCtrl as outer">
+        <p ng-bind="outer.testProp"></p>
+        <div ng-controller="innerCtrl as inner">
+            <p ng-bind="inner.testProp"></p>  
+        </div>
+    </div>
+</body>
+
+</html>
